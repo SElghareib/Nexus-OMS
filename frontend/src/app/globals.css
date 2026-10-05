@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* React Flow custom styles */
+.react-flow__node {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__node-plan {
+  background: #eff6ff;
+  border: 2px solid #3b82f6;
+}
+
+.react-flow__node-tool {
+  background: #fef3c7;
+  border: 2px solid #f59e0b;
+}
+
+.react-flow__node-result {
+  background: #f0fdf4;
+  border: 2px solid #22c55e;
+}
+
+.react-flow__node.failed {
+  background: #fef2f2;
+  border: 2px solid #ef4444;
+}
+
+.react-flow__node.waiting_approval {
+  background: #fff7ed;
+  border: 2px solid #f97316;
+}
